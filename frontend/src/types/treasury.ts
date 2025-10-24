@@ -148,10 +148,12 @@ export interface UploadFileRequest {
 }
 
 export interface ConnectBankRequest {
+    bankId?: string;
     bankName: string;
-    username: string;
-    password: string;
+    username?: string;
+    password?: string;
     institutionId: string;
+    clientId?: string;
 }
 
 // API response types
